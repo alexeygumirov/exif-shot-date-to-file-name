@@ -1,0 +1,1 @@
+# exif-shot-date-to-file-name
