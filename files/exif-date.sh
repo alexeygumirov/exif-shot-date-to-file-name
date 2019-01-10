@@ -1,16 +1,3 @@
-# Bash script to put shot date from EXIF into file name
-
-When organize your photo library, it is convinient to use sort files based on date of shot.
-I made shell script which exctracts necessary information from the EXIF of the picture file and adds the date into the file name.
-
-## Required packages
-
-To exctract information from file using `identify` tool from the ImageMagick suite of tools. My version of _*ImageMagick 6.9.7-4*.
-In my script I rename only *JPG* and PNG files, but you can add more extensions.
-
-## The script itself
-
-```sh
 #!/bin/bash
 #
 # This script extracts the date of the foto was taken from the EXIF information
@@ -41,7 +28,3 @@ elif [[ ! -d $SOURCE ]]; then # Checking, if target is not a directory (e.g. fil
 	echo "Error! Please enter directory as input."
 	exit 1
 fi
-
-```
-
-Original script file you can download here [exif-date.sh](files/exif-date.sh)
