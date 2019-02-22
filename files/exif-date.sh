@@ -19,7 +19,7 @@ if [[ -d $SOURCE ]]; then # Checking if target is a directory.
 	mkdir -p with_date/
 	for FILE in $(find . -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.png" \) -printf "%f\n")
 	do
-		SHOT_DATE=$(identify -verbose "$FILE" | grep DateTime: | awk -F":" '{print $3"-"$4"-"$5}' | cut -b2-11)
+		SHOT_DATE=$(identify -verbose "$FILE" | grep exif:DateTimeOriginal: | awk -F":" '{print $3"-"$4"-"$5}' | cut -b2-11)
 		cp "$FILE" with_date/"$SHOT_DATE"_"$FILE"
 	done
 	cd "$INITDIR"	
