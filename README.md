@@ -14,8 +14,11 @@ In my script I rename only **JPG** and **PNG** files, but you can add more exten
 - Script shall receive target directory as an input.
 - Script creates new sub directory there called **with_dates**.
 - Scripts extracts following field from EXIF: **DateTimeOriginal**.
+	- > It might be, that your camera uses different field (e.g. **DateTime** or **DateTimeDigitalized).** Then you shall modify or extend the script to use those fields to extract the data. My SLR (Nikon D7000), my smart phones put **DateTimeOriginal** field in the EXIF.
 - Copies original picture file into the **with_dates** sub folder with the following name format: **[DATE]_[ORIGINAL FILE NAME].[EXTENSION]** (e.g. 2019-02-01_IMAGE0001.JGP).
 	- Where DATE is formatted as follows: `%Y-%m-%d` (e.g. 2019-02-01)
+
+If you wish, you can modify the script to extract and put even time of shot in the file name.
 
 
 ```sh
