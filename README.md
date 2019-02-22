@@ -1,6 +1,6 @@
 # Bash script to put shot date from EXIF into file name
 
-When organize your photo library, it is convinient to use sort files based on date of shot.
+When organize your photo library, it is convinient to use sort files based on date of shot. But quite often SLRs do not provide this option (e.g. mine allows only format first 3 letters of the file name and then it creates picure files with the names like **<ABC>_<1234>.nef**. When camera reaches 9999th shot, it starts again with 0001. Therefore I needed some tool/script which will help me to organize files properly.
 I made shell script which exctracts necessary information from the EXIF of the picture file and adds the date into the file name.
 
 ## Required packages
