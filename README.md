@@ -7,7 +7,7 @@ Using power of Linux shell and command line tools I made a script which exctract
 ## Required packages
 
 To exctract information from file I use `identify` tool from the **ImageMagick** suite of tools. My version of **ImageMagick** is **6.9.7-4**.
-In my script I rename only *JPG* and PNG files, but you can add more extensions.
+In my script I rename only **JPG** and **PNG** files, but you can add more extensions.
 
 ## The script itself
 
