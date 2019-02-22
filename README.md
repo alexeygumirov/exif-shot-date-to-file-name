@@ -13,9 +13,9 @@ In my script I rename only **JPG** and **PNG** files, but you can add more exten
 
 - Script shall receive target directory as an input.
 - Script creates new sub directory there called **with_dates**.
-- Scripts extracts following field from EXIF: **DateTimeOriginal**
-- Copies original picture file into the **with_dates** sub folder with the following name format: **[DATE]_[ORIGINAL FILE NAME].[EXTENSION]**
-	- Where DATE is formatted as follows: `%Y-%m-%d` 
+- Scripts extracts following field from EXIF: **DateTimeOriginal**.
+- Copies original picture file into the **with_dates** sub folder with the following name format: **[DATE]_[ORIGINAL FILE NAME].[EXTENSION]** (e.g. 2019-02-01_IMAGE0001.JGP).
+	- Where DATE is formatted as follows: `%Y-%m-%d` (e.g. 2019-02-01)
 
 
 ```sh
