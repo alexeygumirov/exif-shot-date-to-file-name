@@ -1,3 +1,13 @@
+# 👋 THIS REPOSITORY HAS MOVED! 👋
+
+**This repository is no longer actively maintained on GitHub.**
+
+Please update your bookmarks and remotes to the new home on Codeberg:
+
+➡️ **[https://codeberg.org/alexeygumirov/exif-shot-date-to-file-name](https://codeberg.org/alexeygumirov/exif-shot-date-to-file-name)** ⬅️
+
+Thank you for your understanding!
+
 # Bash script to put shot date from EXIF into file name
 
 When organize your photo library, it is convenient to use sort files based on date of shot. But quite often SWLRs do not provide this option (e.g. mine allows only format first 3 letters of the file name and then it creates picture files with the names like **<ABC>_<1234>.nef**. When camera reaches 9999th shot, it starts again with 0001. Therefore I needed some tool/script which will help me to organize files properly.
